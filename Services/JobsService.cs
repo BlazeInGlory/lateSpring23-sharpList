@@ -43,6 +43,7 @@ public class JobsService
     original.Hours = updateData.Hours != null ? updateData.Hours : original.Hours;
     original.Pay = updateData.Pay != null ? updateData.Hours : original.Hours;
     original.Description = updateData.Description != null ? updateData.Description : original.Description;
+    return updateData;
   }
 }
 

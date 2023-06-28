@@ -16,6 +16,7 @@ public class JobsController : ControllerBase
     try
     {
       List<Job> jobs = _jobsService.GetAllJobs();
+      return Ok(jobs);
     }
     catch (Exception e)
     {
